@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Sidebar from '../components/Sidebar';
 
 export default function Home() {
  return (
@@ -7,6 +8,13 @@ export default function Home() {
     <title>twitRoom</title>
     <link rel="icon" href="/twit-room-icon.ico" />
    </Head>
+
+   <main>
+    <Sidebar />
+    {/* Feed */}
+    {/* Widgets */}
+    {/* Modal */}
+   </main>
   </div>
  );
 }
