@@ -3,7 +3,15 @@ import Sidebar from '../components/Sidebar';
 
 export default function Home() {
  return (
-  <div className="flex flex-col items-center justify-center min-h-screen py-2">
+  // Had to remove the flex class, for some reason it was causing the main
+  // bg of black not to show up
+
+  // Also removed the class py-2 from the wrapper container; padding top and bottom of 5px
+  // because it was causing a white border at the top and bottom of the page
+
+  // todo: find out why these issues are happening
+
+  <div className="flex-col items-center justify-center min-h-screen">
    <Head>
     <title>twitRoom</title>
     <link rel="icon" href="/twit-room-icon.ico" />
